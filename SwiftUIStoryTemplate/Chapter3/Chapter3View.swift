@@ -8,7 +8,7 @@ struct Chapter3View: View {
                     Image("o")
                         .resizable()
                         .ignoresSafeArea()
-                  NavigationLink(destination:
+                    NavigationLink(destination:
                      {
                       Chapter3SecondView()
                   }, label: {
