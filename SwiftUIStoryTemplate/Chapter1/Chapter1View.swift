@@ -25,9 +25,9 @@ struct Chapter1View: View {
             }
             
         }
+       
     }
 }
-
 #Preview {
     Chapter1View()
 }
