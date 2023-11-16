@@ -1,22 +1,82 @@
-//
-//  Chapter3ThirdView.swift
-//  SwiftUIStoryTemplate
-//
-//  Created by Olga on 11/13/23.
-//
 
 import SwiftUI
+import AVKit
 
 struct Chapter3ThirdView: View {
+    @State var audioPlayer: AVAudioPlayer!
+    @State var goHome = false
     var body: some View {
-      
+        NavigationView{
+             
             ZStack {
                 Image("o2")
                     .resizable()
                     .ignoresSafeArea()
-                VStack {
+                VStack { 
+                    HStack{
+//                        NavigationLink(
+//                            destination: ContentView(),
+//                            label: {
+//                                Text("Tap")
+//                                    .onTapGesture {
+//                                        let sound = Bundle.main.path(forResource: "hey", ofType: "aiff")
+//                                        self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+//                                        self.audioPlayer.play()
+//                                    }
+//                            })
+//                        NavigationLink(destination: ContentView(), isActive: $goHome, label: {}).isDetailLink(false)
+//                        
+//                        NavigationStack(path: ContentView()){
+//                            .navigationDestination(
+//                                 isPresented: $goHome) {
+//                                 }
+//                        }
+//                        
+//                        Button{
+//                            let sound = Bundle.main.path(forResource: "hey", ofType: "aiff")
+//                            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+//                            self.audioPlayer.play()
+//                            
+//                            
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+//                                goHome = true
+//                            }
+//                            
+//                            
+//                            
+//                        }label: {
+//                            Image(systemName: "house")
+//                                .resizable()
+//                                .frame(width: 35, height: 35)
+//                                .foregroundStyle(.white)
+//                        }
+////                        Image(systemName: "house")
+////                            .resizable()
+////                            .frame(width: 35, height: 35)
+////                            .foregroundStyle(.white)
+////                            .onTapGesture{
+////                                let sound = Bundle.main.path(forResource: "hey", ofType: "aiff")
+////                                self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+////                                self.audioPlayer.play()
+////                            }
+                        NavigationLink(destination: ContentView()
+                            .onAppear {
+                                let sound = Bundle.main.path(forResource: "hey", ofType: "aiff")
+                                self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+                                self.audioPlayer.play()
+                            }
+                        ){
+                            Label("", systemImage: "house")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                        }
+                        Spacer()
+                    }
+                    .navigationBarBackButtonHidden(true)
                     ScrollView {
                         Text("""
+                PET CEMETERY
+    
             Doctor was asked to manage this position at the Univetsity hospital, and He, his wife and two children moved from the metropolis to a Detroit.
     LOUIS CREED  - is a middle-aged man, a loving husband and father, the head physician at the university hospital, and does not believe in the supernatural.
             On the day of his arrival, to Detroit Dr. Louis Creed met Old man Jude Crandall, who lived Next door, behind a busy road.
@@ -28,17 +88,18 @@ struct Chapter3ThirdView: View {
             Those who wanted to return their pets knew about this plateau. When Louis asked if people were buried there, Jude became afraid and answered in the negative. It seemed to the doctor that the old man was lying and that something seemed to be controlling him.The next morning the cat returned home. His movements became sluggish; while hunting, he showed excessive cruelty; he smelled like an unearthed grave.
     In the spring, his son, who had recently learned to walk, ran out onto the road where he was hit by a truck.
     """)
-.font(Font.custom("DancingScript-Bold", size: 30))
+                        .font(Font.custom("DancingScript-Bold", size: 30))
                         .foregroundStyle(.white)
                     }
-                    .padding(30)
+//                    .padding(30)
                     Spacer()
                 }
-
-//               .navigationBarBackButtonHidden(true)
+                .navigationBarBackButtonHidden(true)
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
+}
 
 
 #Preview {

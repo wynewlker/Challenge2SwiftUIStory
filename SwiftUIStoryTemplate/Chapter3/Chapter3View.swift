@@ -12,7 +12,7 @@ struct Chapter3View: View {
                      {
                       Chapter3SecondView()
                   }, label: {
-                      Text("Pet Semetery")
+                      Text("Pet Semetery") 
                           .bold()
                           .foregroundColor(.white)
 .font(Font.custom("DancingScript-Bold", size: 40))
@@ -22,7 +22,6 @@ struct Chapter3View: View {
                   })
                         }
                     }
-//           .navigationBarBackButtonHidden(true)
             }
             .navigationBarBackButtonHidden(true)
         }
