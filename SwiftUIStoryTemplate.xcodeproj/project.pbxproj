@@ -23,6 +23,7 @@
 		C79C19F22B041D5500DBB921 /* Page 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C19F12B041D5500DBB921 /* Page 1.swift */; };
 		C79C19F42B0557DF00DBB921 /* storyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C19F32B0557DF00DBB921 /* storyInfo.swift */; };
 		C79C19F62B05582E00DBB921 /* chap5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C19F52B05582E00DBB921 /* chap5View.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 				5DE6F68A2AFAE492004ABB4F /* Chapter4 */,
 				5DE6F68B2AFAE49B004ABB4F /* Chapter5 */,
 				5DE6F6732AFADF08004ABB4F /* Assets.xcassets */,
+				D0AFECEB2B04151D00CEB8AF /* pictures.swift */,
 				5DE6F6752AFADF08004ABB4F /* Preview Content */,
 				773C15292B056B3F00D6B91E /* hey.aiff */,
 			);
