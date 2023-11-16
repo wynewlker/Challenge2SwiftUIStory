@@ -2,28 +2,29 @@ import SwiftUI
 
 struct ContentView: View {
 
-    var body: some View {
-        TabView {
-            Chapter1View()
-                .tabItem {
-                    Label("Chapter 1", systemImage: "1.circle")
-                }
-            Chapter2View()
-                .tabItem {
-                    Label("Chapter 2", systemImage: "2.circle")
-                }
-            Chapter3View()
-                .tabItem {
-                    Label("Chapter 3", systemImage: "3.circle")
-                }
-            Chapter4View()
-                .tabItem {
-                    Label("Chapter 4", systemImage: "4.circle")
-                }
-            chap5View()
-                .tabItem {
-                    Label("Chapter 5", systemImage: "5.circle")
-    var body: some View { 
+//    var body: some View {
+//        TabView {
+//            Chapter1View()
+//                .tabItem {
+//                    Label("Chapter 1", systemImage: "1.circle")
+//                }
+//            Chapter2View()
+//                .tabItem {
+//                    Label("Chapter 2", systemImage: "2.circle")
+//                }
+//            Chapter3View()
+//                .tabItem {
+//                    Label("Chapter 3", systemImage: "3.circle")
+//                }
+//            Chapter4View()
+//                .tabItem {
+//                    Label("Chapter 4", systemImage: "4.circle")
+//                }
+//            chapter5View()
+//                .tabItem {
+//                    Label("Chapter 5", systemImage: "5.circle")
+   
+        var body: some View {
         NavigationView {
             ZStack {
                 Image("cover")

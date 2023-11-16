@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct chap5View: View {
+struct Chapter5View: View {
     var body: some View {
         NavigationStack {
             ZStack{
@@ -32,5 +32,5 @@ struct chap5View: View {
     }
 }
 #Preview {
-    chap5View()
+    Chapter5View()
 }
