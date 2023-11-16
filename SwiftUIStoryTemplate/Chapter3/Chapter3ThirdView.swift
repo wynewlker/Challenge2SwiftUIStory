@@ -4,64 +4,17 @@ import AVKit
 
 struct Chapter3ThirdView: View {
     @State var audioPlayer: AVAudioPlayer!
-    @State var goHome = false
     var body: some View {
         NavigationView{
-             
             ZStack {
                 Image("o2")
                     .resizable()
                     .ignoresSafeArea()
                 VStack { 
                     HStack{
-//                        NavigationLink(
-//                            destination: ContentView(),
-//                            label: {
-//                                Text("Tap")
-//                                    .onTapGesture {
-//                                        let sound = Bundle.main.path(forResource: "hey", ofType: "aiff")
-//                                        self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-//                                        self.audioPlayer.play()
-//                                    }
-//                            })
-//                        NavigationLink(destination: ContentView(), isActive: $goHome, label: {}).isDetailLink(false)
-//                        
-//                        NavigationStack(path: ContentView()){
-//                            .navigationDestination(
-//                                 isPresented: $goHome) {
-//                                 }
-//                        }
-//                        
-//                        Button{
-//                            let sound = Bundle.main.path(forResource: "hey", ofType: "aiff")
-//                            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-//                            self.audioPlayer.play()
-//                            
-//                            
-//                            DispatchQueue.main.asyncAfter(deadline: .now() + 5){
-//                                goHome = true
-//                            }
-//                            
-//                            
-//                            
-//                        }label: {
-//                            Image(systemName: "house")
-//                                .resizable()
-//                                .frame(width: 35, height: 35)
-//                                .foregroundStyle(.white)
-//                        }
-////                        Image(systemName: "house")
-////                            .resizable()
-////                            .frame(width: 35, height: 35)
-////                            .foregroundStyle(.white)
-////                            .onTapGesture{
-////                                let sound = Bundle.main.path(forResource: "hey", ofType: "aiff")
-////                                self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-////                                self.audioPlayer.play()
-////                            }
-                        NavigationLink(destination: ContentView()
+                        NavigationLink(destination: Chapter3SecondView(audioPlayer: $audioPlayer)
                             .onAppear {
-                                let sound = Bundle.main.path(forResource: "hey", ofType: "aiff")
+                                let sound = Bundle.main.path(forResource: "horror", ofType: "mp3")
                                 self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
                                 self.audioPlayer.play()
                             }
@@ -91,7 +44,6 @@ struct Chapter3ThirdView: View {
                         .font(Font.custom("DancingScript-Bold", size: 30))
                         .foregroundStyle(.white)
                     }
-//                    .padding(30)
                     Spacer()
                 }
                 .navigationBarBackButtonHidden(true)

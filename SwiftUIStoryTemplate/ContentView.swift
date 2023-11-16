@@ -1,4 +1,5 @@
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
 
@@ -44,7 +45,7 @@ struct ContentView: View {
                     }
                     Spacer()
 
-                    NavigationLink(destination: Chapter3View()) {
+                    NavigationLink(destination: Chapter3View(audioPlayer: .constant(AVAudioPlayer()))) {
                         ChapterTitleView(title: "PET CEMETERY", author: "By Olga")
                     }
                     Spacer()
