@@ -2,30 +2,33 @@ import SwiftUI
 
 struct Chapter1View: View {
     var body: some View {
-        NavigationStack{
+        NavigationView {
             VStack {
                 ZStack {
                 Image("Bookcover")
+                    
                         .resizable()
                         .ignoresSafeArea()
                     NavigationLink(destination:
                                     {
-                        Chapter12ndview()
+                        Chapter1BookScroll()
                     }, label: {
-                    Text("The Unbecoming made by LaWayne Walker")
+                    Text("The Slaughterhouse made by LaWayne Walker")
+                        
                             .bold()
-                            .foregroundColor(.orange)
-                            .font(Font.custom("bodoni 72",size: 35))
-                            .padding(.bottom,100)
-                                  
+                            .foregroundColor(.white)
+                            .font(Font.custom("bodoni 72",size: 50))
+                            .padding(.bottom,50)
+
                     }
                 )}
+                
             }
             
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
-
 #Preview {
     Chapter1View()
 }
