@@ -16,11 +16,18 @@
 		5DE6F6802AFAE3E6004ABB4F /* Chapter2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F67F2AFAE3E6004ABB4F /* Chapter2View.swift */; };
 		5DE6F6822AFAE3EA004ABB4F /* Chapter3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6812AFAE3EA004ABB4F /* Chapter3View.swift */; };
 		5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6832AFAE3EF004ABB4F /* Chapter4View.swift */; };
+
+		C79C19F02B041BAF00DBB921 /* Page 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C19EF2B041BAF00DBB921 /* Page 2.swift */; };
+		C79C19F22B041D5500DBB921 /* Page 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C19F12B041D5500DBB921 /* Page 1.swift */; };
+		C79C19F42B0557DF00DBB921 /* storyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C19F32B0557DF00DBB921 /* storyInfo.swift */; };
+		C79C19F62B05582E00DBB921 /* chap5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C19F52B05582E00DBB921 /* chap5View.swift */; };
+
 		5DE6F6862AFAE3F3004ABB4F /* Chapter5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */; };
 		7709F0462B030B270035E683 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7709F0452B030B270035E683 /* DancingScript-VariableFont_wght.ttf */; };
 		773C152A2B056B3F00D6B91E /* hey.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 773C15292B056B3F00D6B91E /* hey.aiff */; };
 		7769B3F82B02E9C000C48482 /* Chapter3SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769B3F72B02E9C000C48482 /* Chapter3SecondView.swift */; };
 		7769B3FA2B02E9E300C48482 /* Chapter3ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769B3F92B02E9E300C48482 /* Chapter3ThirdView.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +41,19 @@
 		5DE6F67F2AFAE3E6004ABB4F /* Chapter2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2View.swift; sourceTree = "<group>"; };
 		5DE6F6812AFAE3EA004ABB4F /* Chapter3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3View.swift; sourceTree = "<group>"; };
 		5DE6F6832AFAE3EF004ABB4F /* Chapter4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4View.swift; sourceTree = "<group>"; };
+    
+		C79C19EF2B041BAF00DBB921 /* Page 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page 2.swift"; sourceTree = "<group>"; };
+		C79C19F12B041D5500DBB921 /* Page 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page 1.swift"; sourceTree = "<group>"; };
+		C79C19F32B0557DF00DBB921 /* storyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = storyInfo.swift; sourceTree = "<group>"; };
+		C79C19F52B05582E00DBB921 /* chap5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chap5View.swift; sourceTree = "<group>"; };
+
 		5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5View.swift; sourceTree = "<group>"; };
 		7709F0452B030B270035E683 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		7709F0472B0397B30035E683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		773C15292B056B3F00D6B91E /* hey.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = hey.aiff; sourceTree = "<group>"; };
 		7769B3F72B02E9C000C48482 /* Chapter3SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3SecondView.swift; sourceTree = "<group>"; };
 		7769B3F92B02E9E300C48482 /* Chapter3ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3ThirdView.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +148,10 @@
 		5DE6F68B2AFAE49B004ABB4F /* Chapter5 */ = {
 			isa = PBXGroup;
 			children = (
-				5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */,
+				C79C19F52B05582E00DBB921 /* chap5View.swift */,
+				C79C19F12B041D5500DBB921 /* Page 1.swift */,
+				C79C19EF2B041BAF00DBB921 /* Page 2.swift */,
+				C79C19F32B0557DF00DBB921 /* storyInfo.swift */,
 			);
 			path = Chapter5;
 			sourceTree = "<group>";
@@ -219,16 +236,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79C19F02B041BAF00DBB921 /* Page 2.swift in Sources */,
 				5DE6F6822AFAE3EA004ABB4F /* Chapter3View.swift in Sources */,
 				7769B3FA2B02E9E300C48482 /* Chapter3ThirdView.swift in Sources */,
 				5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */,
 				5DE6F6722AFADF05004ABB4F /* ContentView.swift in Sources */,
 				5DE6F6802AFAE3E6004ABB4F /* Chapter2View.swift in Sources */,
+
+				C79C19F22B041D5500DBB921 /* Page 1.swift in Sources */,
+				5DE6F67E2AFAE3DF004ABB4F /* Chapter1View.swift in Sources */,
+				5DE6F6702AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift in Sources */,
+				239420F32B03F6DA00F4138E /* Chapter12ndview.swift in Sources */,
+				C79C19F42B0557DF00DBB921 /* storyInfo.swift in Sources */,
+				C79C19F62B05582E00DBB921 /* chap5View.swift in Sources */,
+
 				7769B3F82B02E9C000C48482 /* Chapter3SecondView.swift in Sources */,
 				5DE6F6862AFAE3F3004ABB4F /* Chapter5View.swift in Sources */,
 				5DE6F67E2AFAE3DF004ABB4F /* Chapter1View.swift in Sources */,
 				5DE6F6702AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift in Sources */,
 				239420F32B03F6DA00F4138E /* Chapter1BookScroll.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +389,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStoryTemplate/Preview Content\"";
+
 				DEVELOPMENT_TEAM = GWR769D53A;
+
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIStoryTemplate/Info.plist;
@@ -392,7 +421,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStoryTemplate/Preview Content\"";
+
 				DEVELOPMENT_TEAM = GWR769D53A;
+
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIStoryTemplate/Info.plist;
