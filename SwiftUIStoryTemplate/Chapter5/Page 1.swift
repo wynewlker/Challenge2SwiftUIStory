@@ -9,61 +9,81 @@ import SwiftUI
 
 struct Page_1: View {
     @State private var response: yesOrNo?
-    let character1 = CharacterDescriptions(name: .Calil, adjective: Adjective.allCases.randomElement()!)
-    let character2 = CharacterDescriptions(name: .Marshall, adjective: Adjective.allCases.randomElement()!)
-    let character3 = CharacterDescriptions(name: .Slim, adjective: Adjective.allCases.randomElement()!)
-   
+    @State private var storySetting: String?
     
+    var characters = [
+        CharacterDescriptions(name: .Calil, adjective: Adjective.allCases.randomElement()!),
+        CharacterDescriptions(name: .Marshall, adjective: Adjective.allCases.randomElement()!),
+        CharacterDescriptions(name: .Slim, adjective: Adjective.allCases.randomElement()!)
+        
+    ]
     let characterCareers = ["detective", "Navy SEAL", "neuroscientist"]
-  
+    
     
     let knownFor = ["sharp instincts", "calm demeanor", "ability to solve the most complex puzzles"]
-   
     
     
     var body: some View {
-        VStack{
-            
-            Text("\(intro())")
-            
-            
-            if let response {
-                Text(introChoice(yesOrNo:response))
-                
-            }
-            Spacer()
-            HStack{
-                
-                Button {
-                    response = .Yes
-                } label: {
-                    Text("Yes?")
-                        .tint(.white)
-                        .padding()
-                        .background(Color.green)
-                        .cornerRadius(10)
-                      
-                        
-                }
-              
-                Button {
-                    response = .No
-                } label: {
-                    Text("No?")
-                        .tint(.white)
-                        .padding()
-                        .background(Color.red)
-                        .cornerRadius(10)
-                 
-                }
         
+            VStack{
+                
+                
+                
+                Text("\(intro())")
+                
+                
+                
+                if let response {
+                    Text(introChoice(yesOrNo:response))
+                    
+                }
+                if let storySetting {
+                    Text(storySetting)
+                }
+                
+                
+                
+                Spacer()
+                if (response == nil) && storySetting == nil {
+                    HStack{
+                        Spacer()
+                        Button {
+                            response = .Yes
+                            storySetting = setting(characters: characters, career: characterCareers.randomElement() ?? "Veteran", adjective: .allCases.randomElement() ?? .seasoned, knownFor: knownFor.randomElement() ?? "Nothing")
+                            
+                        } label: {
+                            Text("Yes?")
+                                .tint(.white)
+                                .padding(30)
+                                .background(Color.green)
+                                .cornerRadius(10)
+                                .font(.largeTitle.bold())
+                            
+                            
+                        }
+                        Spacer()
+                        Button {
+                            response = .No
+                            storySetting = setting(characters: characters, career: characterCareers.randomElement() ?? "Veteran", adjective: .allCases.randomElement() ?? .seasoned, knownFor: knownFor.randomElement() ?? "Nothing")
+                            
+                        } label: {
+                            Text("No?")
+                                .tint(.white)
+                                .padding(30)
+                                .background(Color.red)
+                                .cornerRadius(10)
+                                .font(.largeTitle.bold())
+                            
+                        }
+                        Spacer()
+                    }
+                }
+                Spacer()
             }
-            Spacer()
-//            Text(setting(characters: [CharacterDescriptions(name: CharacterNames.Calil, adjective: .brilliant), CharacterDescriptions(name: CharacterNames.Fiendman, adjective: .retired)], career: "Diesel Technician", adjective: .seasoned, knownFor: "Rolling coal"))
         }
     }
-}
+    
+    #Preview {
+        Page_1()
+    }
 
-#Preview {
-    Page_1()
-}

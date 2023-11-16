@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Chapter5View: View {
     var body: some View {
-        NavigationStack {
+        //NavigationStack {
             ZStack{
                 Image("Chap5BookCover")
                     .resizable()
@@ -28,7 +28,7 @@ struct Chapter5View: View {
                 }
                 
             }
-        }
+       // }
     }
 }
 #Preview {
