@@ -2,7 +2,7 @@ import SwiftUI
 
 struct Chapter1View: View {
     var body: some View {
-        NavigationStack{
+        NavigationView {
             VStack {
                 ZStack {
                 Image("Bookcover")
@@ -19,13 +19,14 @@ struct Chapter1View: View {
                             .foregroundColor(.white)
                             .font(Font.custom("bodoni 72",size: 50))
                             .padding(.bottom,50)
-                                  
+
                     }
                 )}
+                
             }
             
         }
-       
+        .navigationBarBackButtonHidden(true)
     }
 }
 #Preview {

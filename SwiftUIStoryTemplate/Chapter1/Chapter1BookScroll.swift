@@ -9,13 +9,21 @@ import SwiftUI
 
 struct Chapter1BookScroll: View {
     var body: some View {
-        ZStack {
-            Image("Book scroll")
-                .resizable()
-                .ignoresSafeArea()
-            VStack {
-                ScrollView {
-                    Text("""
+        NavigationView {
+            ZStack {
+                Image("Book scroll")
+                    .resizable()
+                    .ignoresSafeArea()
+                VStack(alignment:.leading) {
+                    NavigationLink(destination: ContentView()
+                    ){
+                        Label("", systemImage: "house")
+                            .font(.largeTitle)
+                            .foregroundColor(.black)
+                    }
+                  
+                    ScrollView {
+                        Text("""
 As the sun sets Tyshawn and Apollo finish up their daily farm work on their families corn field.
 Apollo Tyshawn who were two brothers that inherited their families local farm as their parents died on Halloween night after working so much tending to the animals they had on the farm. Ever since they were little the two boys were used to herding the animals on the farm to then put them in their respetive pens on the daily nonstop.
 They have to tend to:
@@ -51,14 +59,16 @@ Suddenly the sun started to rise and one by one as the light hit the aplications
 Now stop their farm land sits the carcuses of all the dead chicken,cows,and chickens as well as Tyshawn and Apollo
 When the sun the rose it was now 8
 """)
-                    .font(Font.custom("bodoni 72", size: 30))
+                        .font(Font.custom("bodoni 72", size: 30))
                         .foregroundStyle(.black)
+                    }
+                    .padding(30)
+                    Spacer()
                 }
-                        .padding(30)
-                        Spacer()
+//                .navigationBarBackButtonHidden(true)
             }
-            .navigationBarBackButtonHidden(true)
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 #Preview {
