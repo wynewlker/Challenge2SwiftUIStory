@@ -18,7 +18,8 @@
 		5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6832AFAE3EF004ABB4F /* Chapter4View.swift */; };
 		5DE6F6862AFAE3F3004ABB4F /* Chapter5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */; };
 		7709F0462B030B270035E683 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7709F0452B030B270035E683 /* DancingScript-VariableFont_wght.ttf */; };
-		773C152A2B056B3F00D6B91E /* hey.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 773C15292B056B3F00D6B91E /* hey.aiff */; };
+		773C15302B06A45000D6B91E /* songpr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 773C152F2B06A45000D6B91E /* songpr.mp3 */; };
+		773C15322B06A67A00D6B91E /* horror.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 773C15312B06A67A00D6B91E /* horror.mp3 */; };
 		7769B3F82B02E9C000C48482 /* Chapter3SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769B3F72B02E9C000C48482 /* Chapter3SecondView.swift */; };
 		7769B3FA2B02E9E300C48482 /* Chapter3ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769B3F92B02E9E300C48482 /* Chapter3ThirdView.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +38,8 @@
 		5DE6F6852AFAE3F3004ABB4F /* Chapter5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5View.swift; sourceTree = "<group>"; };
 		7709F0452B030B270035E683 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		7709F0472B0397B30035E683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		773C15292B056B3F00D6B91E /* hey.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = hey.aiff; sourceTree = "<group>"; };
+		773C152F2B06A45000D6B91E /* songpr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = songpr.mp3; path = "/Users/olga/Documents/Challenge2SwiftUIStoryNew/SwiftUIStoryTemplate/Preview Content/songpr.mp3"; sourceTree = "<absolute>"; };
+		773C15312B06A67A00D6B91E /* horror.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horror.mp3; sourceTree = "<group>"; };
 		7769B3F72B02E9C000C48482 /* Chapter3SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3SecondView.swift; sourceTree = "<group>"; };
 		7769B3F92B02E9E300C48482 /* Chapter3ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3ThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +84,6 @@
 				5DE6F68B2AFAE49B004ABB4F /* Chapter5 */,
 				5DE6F6732AFADF08004ABB4F /* Assets.xcassets */,
 				5DE6F6752AFADF08004ABB4F /* Preview Content */,
-				773C15292B056B3F00D6B91E /* hey.aiff */,
 			);
 			path = SwiftUIStoryTemplate;
 			sourceTree = "<group>";
@@ -91,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				5DE6F6762AFADF08004ABB4F /* Preview Assets.xcassets */,
+				773C152F2B06A45000D6B91E /* songpr.mp3 */,
+				773C15312B06A67A00D6B91E /* horror.mp3 */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -206,8 +209,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7709F0462B030B270035E683 /* DancingScript-VariableFont_wght.ttf in Resources */,
+				773C15302B06A45000D6B91E /* songpr.mp3 in Resources */,
 				5DE6F6772AFADF08004ABB4F /* Preview Assets.xcassets in Resources */,
-				773C152A2B056B3F00D6B91E /* hey.aiff in Resources */,
+				773C15322B06A67A00D6B91E /* horror.mp3 in Resources */,
 				5DE6F6742AFADF08004ABB4F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
