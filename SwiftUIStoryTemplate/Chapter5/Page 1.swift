@@ -24,26 +24,36 @@ struct Page_1: View {
     
     
     var body: some View {
-        
             VStack{
                 
-                
+                Spacer()
                 
                 Text("\(intro())")
-                
+                    .padding()
+                    .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
                 
                 
                 if let response {
                     Text(introChoice(yesOrNo:response))
-                    
+                        .padding()
+                        .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
                 }
                 if let storySetting {
                     Text(storySetting)
+                        .padding()
+                        .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
                 }
                 
                 
                 
                 Spacer()
+                
                 if (response == nil) && storySetting == nil {
                     HStack{
                         Spacer()
@@ -61,7 +71,7 @@ struct Page_1: View {
                             
                             
                         }
-                        Spacer()
+                        
                         Button {
                             response = .No
                             storySetting = setting(characters: characters, career: characterCareers.randomElement() ?? "Veteran", adjective: .allCases.randomElement() ?? .seasoned, knownFor: knownFor.randomElement() ?? "Nothing")
@@ -75,14 +85,21 @@ struct Page_1: View {
                                 .font(.largeTitle.bold())
                             
                         }
+                        
                         Spacer()
                     }
+                    
                 }
                 Spacer()
             }
+            .background {
+                Image("Chapter5page")
+                    .ignoresSafeArea()
+            
         }
     }
-    
+}
+
     #Preview {
         Page_1()
     }
