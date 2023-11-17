@@ -28,6 +28,8 @@ enum yesOrNo: String {
     case Yes
     case No
 }
+
+
 func intro() -> String {
     return """
 \n You want to hear a story? \n Yes, YOU. \n Trust me, it will be a good one. \n Do you want to hear it or not?

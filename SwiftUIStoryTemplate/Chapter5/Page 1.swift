@@ -24,6 +24,7 @@ struct Page_1: View {
     
     
     var body: some View {
+        ScrollView {
             VStack{
                 
                 Spacer()
@@ -92,11 +93,13 @@ struct Page_1: View {
                 }
                 Spacer()
             }
-            .background {
+            
+            
+            }.background {
                 Image("Chapter5page")
                     .ignoresSafeArea()
-            
         }
+       
     }
 }
 
