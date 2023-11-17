@@ -1,12 +1,29 @@
 
 import SwiftUI
+import AVKit
+
 struct Chapter3SecondView: View {
+    @Binding var audioPlayer: AVAudioPlayer!
     var body: some View {
         VStack {
             ZStack {
                 Image("o1")
                     .resizable()
                     .ignoresSafeArea()
+                VStack{
+                    HStack{
+                        NavigationLink(destination: Chapter3View(audioPlayer: $audioPlayer)
+                        ){
+                            Label("Stay with me", systemImage: "")
+                                .font(Font.custom("DancingScript-Bold", size: 20))
+                                .foregroundColor(.white)
+                        }
+                        
+                    .navigationBarBackButtonHidden(true)
+                        Spacer()
+                    }
+                    Spacer()
+                }
                 HStack(alignment: .center, spacing: 100) {
                     Text("""
   PET CEMETERY
@@ -40,6 +57,6 @@ struct Chapter3SecondView: View {
     }
 }
     #Preview {
-        Chapter3SecondView()
+        Chapter3SecondView(audioPlayer: .constant(AVAudioPlayer()))
     }
 
