@@ -33,7 +33,7 @@ struct Chapter3View: View {
                      {
                       Chapter3SecondView(audioPlayer: $audioPlayer)
                   }, label: {
-                      Text("Pet Semetery") 
+                      Text("Pet Cemetery")
                           .bold()
                           .foregroundColor(.white)
 .font(Font.custom("DancingScript-Bold", size: 40))
