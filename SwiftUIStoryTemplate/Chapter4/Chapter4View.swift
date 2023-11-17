@@ -2,7 +2,14 @@ import SwiftUI
 
 struct Chapter4View: View {
     var body: some View {
-        Text("Chapter 4")
+        Text("""
+    Under
+Construction
+
+""")
+        .bold()
+        .foregroundColor(.black)
+        .font(Font.custom("DancingScript-Bold", size: 60))
     }
 }
 
