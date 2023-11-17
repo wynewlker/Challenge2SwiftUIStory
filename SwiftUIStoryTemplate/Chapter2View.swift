@@ -3,7 +3,7 @@ import SwiftUI
 
 struct Chapter2View: View {
     var body: some View {
-        
+        //dfj vi
         VStack {
             ScrollView{
                 Image("Black-Addams-Family-Parents")
